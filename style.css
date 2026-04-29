@@ -2,17 +2,20 @@
 /* Header */
 /***********************************/
 .header {
+  max-width: 130rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
+  background-color: #e9fde9;
 
   height: 9.6rem;
   padding: 0 4.8rem;
 }
 
 .profileFoto {
-  height: 5.2rem;
+  height: 3.6rem;
+  border-radius: 50px;
 }
 
 /***********************************/
@@ -55,4 +58,36 @@
   border-radius: 9px;
   color: chocolate;
   background-color: white;
+}
+
+/***********************************/
+/* HERO */
+/***********************************/
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #e9fde9;
+  padding: 0rem 2.4rem;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-list {
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
+  align-items: center;
+  gap: 9rem;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 50px;
 }
