@@ -118,6 +118,7 @@
   font-size: 1.8rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .abilities-img {
@@ -125,9 +126,16 @@
   border-radius: 9px;
 }
 
+.abilities-rating {
+  display: flex;
+  gap 0.4 rem;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(198, 208, 214);
+}
+
 .abilities-icon {
-  font-size: 1rem;
-  color: burlywood;
-  align-items: flex-end;
-  margin-left: 0.4rem;
+  font-size: 1.6rem;
+  color: rgb(235, 146, 30);
+  
 }
