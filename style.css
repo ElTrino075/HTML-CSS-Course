@@ -2,7 +2,6 @@
 /* Header */
 /***********************************/
 .header {
-  max-width: 130rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -63,13 +62,16 @@
 /***********************************/
 /* HERO */
 /***********************************/
+.section-hero {
+  background-color: #e9fde9;
+  padding: 0rem 2.4rem;
+}
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background-color: #e9fde9;
-  padding: 0rem 2.4rem;
 }
 
 .hero-description {
@@ -98,6 +100,15 @@
 
 .section-abilities {
   padding: 3rem 0;
+  background-color: #e9fdfc;
+  padding: 2.4rem 2.4rem;
+}
+
+.abilities {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
 }
 
 .abilities-title {
@@ -112,12 +123,17 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 0 1.2rem;
 }
 
 .abilities-attribute {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
+  gap: 1rem;
+}
+
+.abilities-attribute--between {
   justify-content: space-between;
 }
 
@@ -126,9 +142,14 @@
   border-radius: 9px;
 }
 
+.abilities-img-small {
+  max-width: 2.4rem;
+  height: auto;
+}
+
 .abilities-rating {
   display: flex;
-  gap 0.4 rem;
+  gap: 0.4rem;
   border-radius: 20px;
   color: white;
   background-color: rgb(198, 208, 214);
@@ -137,5 +158,4 @@
 .abilities-icon {
   font-size: 1.6rem;
   color: rgb(235, 146, 30);
-  
 }
