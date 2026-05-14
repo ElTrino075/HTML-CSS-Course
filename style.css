@@ -111,11 +111,18 @@
   transition: all 0.4s;
 }
 
+.abilities:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.45); /*x y blur kleur */
+}
+
 .abilities-title {
+  display: flex;
   font-size: 2.4rem;
   color: #333;
   font-weight: 600;
   margin-bottom: 3.2rem;
+  justify-content: center;
 }
 
 .abilities-attributes {
@@ -158,4 +165,10 @@
 .abilities-icon {
   font-size: 1.6rem;
   color: rgb(235, 146, 30);
+}
+
+.abilities-language {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
