@@ -97,7 +97,7 @@
 /***********************************/
 
 .section-abilities {
-  padding: 6.2rem 0;
+  padding: 3rem 0;
 }
 
 .abilities-title {
@@ -118,10 +118,16 @@
   font-size: 1.8rem;
   display: flex;
   align-items: center;
-  gap: 1.6rem;
 }
 
 .abilities-img {
   width: 100%;
   border-radius: 9px;
+}
+
+.abilities-icon {
+  font-size: 1rem;
+  color: burlywood;
+  align-items: flex-end;
+  margin-left: 0.4rem;
 }
