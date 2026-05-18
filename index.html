@@ -110,6 +110,25 @@
                 </span>
               </li>
               <li class="abilities-attribute abilities-attribute--between">
+                <span>VueJs</span>
+                <span class="abilities-rating">
+                  <ion-icon class="abilities-icon" name="ellipse"></ion-icon>
+                  <ion-icon class="abilities-icon" name="contrast-outline"></ion-icon>
+                  <ion-icon
+                    class="abilities-icon"
+                    name="ellipse-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="abilities-icon"
+                    name="ellipse-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="abilities-icon"
+                    name="ellipse-outline"
+                  ></ion-icon>
+                </span>
+              </li>
+              <li class="abilities-attribute abilities-attribute--between">
                 <span> Mainframe / As400 </span>
                 <span class="abilities-rating">
                   <ion-icon class="abilities-icon" name="ellipse"></ion-icon>
@@ -246,13 +265,14 @@
               Inhoudelijk wat placeholders, maar op zich een goeie basis om een
               echte profielpagina van te maken.
             </p>
-            <form class="contact-form-formulier" action="#">
+            <form class="contact-form-formulier" name="contact-me" netlify>
               <div>
                 <label for="naam">Jouw naam</label>
                 <input
                   id="naam"
                   type="text"
                   placeholder="Jan Jansen"
+                  name="full-name"
                   required
                 />
               </div>
@@ -262,6 +282,7 @@
                   id="email"
                   type="email"
                   placeholder="naam@ergens.nl"
+                  name="email"
                   required
                 />
               </div>
@@ -279,7 +300,7 @@
               <ion-icon class="social-icon" name="logo-linkedin"
             </a>
           </li>
-          
+
           <li>
               <a class="footer-link" href="#"
                 ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
