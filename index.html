@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="top">
     <header class="header">
       <img
         class="profileFoto"
@@ -16,10 +16,13 @@
       />
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Content</a></li>
-          <li><a class="main-nav-link" href="#">Fun</a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link nav-contact" href="#">Contact</a></li>
+          <li><a class="main-nav-link" href="#top">Top</a></li>
+          <li><a class="main-nav-link" href="#abilities">Skills</a></li>
+          <!-- <li><a class="main-nav-link" href="#">Fun</a></li>
+          <li><a class="main-nav-link" href="#">Testimonials</a></li> -->
+          <li>
+            <a class="main-nav-link nav-contact" href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -56,7 +59,7 @@
           </div>
         </div>
       </section>
-      <section class="section-abilities">
+      <section class="section-abilities" id="abilities">
         <div class="container">
           <span class="subheading">Wat over mezelf</span>
           <h2 class="heading-secondary">Skills, talen en hobbies</h2>
@@ -234,35 +237,78 @@
           </div>
         </div>
       </section>
-<section class="section-contact-form">
-<div class="container contact">
-  <div class="contact-form-text-box">
-    <h2 class="heading-secondary">Laat hier je review achter.</h2>
-    <p class="contact-form-text">Ik heb deze pagina als afsluiter van de HTML/CSS training gemaakt.
-      Inhoudelijk wat placeholders, maar op zich een goeie basis om een echte profielpagina
-      van te maken. 
-    </p>
-    <form class="contact-form-formulier" action="#">
-      <div>
-        <label for="naam">Jouw naam</label>
-      <input id="naam" type="text" placeholder="Jan Jansen" required/>
-    </div>
-      <div>
-      <label for="email">email adres</label>
-      <input id="email" type="email" placeholder="naam@ergens.nl" required/> 
-    </div>
-      <button class="btn">Verstuur feedback</button>
-    </form>
-  </div>
-  
-</div>
-</section>
-
-      <!-- <section>Fun?</section>
-      <section>Testimonials</section>
-      
+      <section class="section-contact-form" id="contact">
+        <div class="container contact">
+          <div class="contact-form-text-box">
+            <h2 class="heading-secondary">Laat hier je review achter.</h2>
+            <p class="contact-form-text">
+              Ik heb deze pagina als afsluiter van de HTML/CSS training gemaakt.
+              Inhoudelijk wat placeholders, maar op zich een goeie basis om een
+              echte profielpagina van te maken.
+            </p>
+            <form class="contact-form-formulier" action="#">
+              <div>
+                <label for="naam">Jouw naam</label>
+                <input
+                  id="naam"
+                  type="text"
+                  placeholder="Jan Jansen"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">email adres</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="naam@ergens.nl"
+                  required
+                />
+              </div>
+              <button class="btn">Verstuur feedback</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>footer komt hier</footer> -->
+    <footer class="footer">
+      <div class="container grid grid--4-cols">
+        <ul class="socials">
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-linkedin"
+            </a>
+          </li>
+          
+          <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+        </ul>
+        <div class="copyright">Copyright &copy; by Marc Trines</div>
+        <div class="address">
+          <p class="footer-heading">Neem contact op</p>
+          <address class="contactinfo">
+            <p>
+              <a href="tel:+31628875471">06-28875471</a> <br />
+              <a href="mailto:marc.trines@nn.nl">marc.trines@nn.nl</a>
+            </p>
+          </address>
+        </div>
+        <div>
+          <details class="about" footer-heading>
+            <summary>About</summary>
+            <p>
+              Ik heb deze pagina als afsluiter van de HTML/CSS training gemaakt.
+              Inhoudelijk wat placeholders, maar op zich een goeie basis om een
+              echte profielpagina van te maken. Focus zit op de CSS.
+            </p>
+          </details>
+        </div>
+      </div>
+    </footer>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

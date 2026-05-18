@@ -10,6 +10,11 @@
 
   height: 9.6rem;
   padding: 0 4.8rem;
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .profileFoto {
@@ -78,6 +83,7 @@
   font-size: 1.8rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
+  padding: 1rem;
 }
 
 .hero-list {
@@ -92,6 +98,10 @@
 .hero-img {
   width: 100%;
   border-radius: 50px;
+}
+
+.hero-text-box {
+  padding: 1rem;
 }
 
 /***********************************/
@@ -226,4 +236,79 @@
   background-image: linear-gradient(to right bottom, #e9fdfc, #e67e22);
   overflow: hidden;
   padding-bottom: 10px;
+}
+
+.contact *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(233, 253, 252, 0.432);
+}
+
+/***********************************/
+/* CONTACT FORM */
+/***********************************/
+
+.footer {
+  padding: 4.8rem 0;
+  background-color: darkgray;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #fafafa;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #0c5b88;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #fafafa;
+}
+
+.contactinfo {
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 1.2rem;
+}
+
+.about {
+  max-width: 40rem;
+  color: #fafafa;
+}
+
+.about summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.about p {
+  margin-top: 1.2rem;
+  line-height: 1.6;
+  color: black;
+}
+
+.socials {
+  list-style: none;
+}
+
+.social-icon {
+  height: 1.6rem;
+  width: 1.6rem;
 }
