@@ -1,0 +1,54 @@
+/*uit de training: 
+rem en em negeren de HTML font-size in media queries.
+Hierom:  1rem = 1em = 16px
+*/
+
+/* 1344/16 =84  Voor kleine desktops*/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 3rem;
+  }
+}
+
+/* 976/16 = 61  */
+@media (max-width: 61em) {
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 972/16 = 42  */
+@media (max-width: 42em) {
+  .grid--3-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .abilties-img {
+    width: 50%;
+    height: 50%;
+    border-radius: 4px;
+  }
+}
+
+/*400/16 = 25   small mobile */
+@media (max-width: 25em) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .abilties-img {
+    width: 50%;
+    height: 50%;
+    border-radius: 4px;
+  }
+  .heading-primary {
+    font-size: 1.8rem;
+  }
+  .heading-secondary {
+    font-size: 1.2rem;
+  }
+}
